@@ -1,0 +1,38 @@
+:root{
+    --ff-Montserrat:"Montserrat",sans-serif;
+    --box-gray:#F2F2F2;
+    --btn-gray:#E0E0E0;
+    --btn-symbol-gray:#828282;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+footer {
+  margin-top: auto;
+  padding: 2.4rem 0 2.4rem;
+}
+
+.footer-text {
+  font: 1.4rem var(--ff-Montserrat);
+  color: #bdbdbd;
+  text-align: center;
+}
