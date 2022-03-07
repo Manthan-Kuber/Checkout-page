@@ -17,13 +17,76 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
 
 </head>
 
 <body>
   <main>
+    <div class="content-container">
+      <h1>Checkout</h1>
+      <div class="item-total">
+        <div class="item-wrapper">
+          <div class="item-container">
+            <div class="img-wrapper">
+              <img src="photo1.png" alt="item1-img" class="item-img">
+            </div>
+            <div class="item-price-container">
+              <div>
+                <h5>Vintage Backbag</h5>
+                <span>$54.99</span>
+                <span>$94.99</span>
+              </div>
+              <div class="stepper-container">
+                <button class="decrement">
+                  -
+                </button>
+                <input type="number" min="1" max="10">
+                <button class='increment'>
+                  +
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="item-container">
+            <div class="img-wrapper">
+              <img src="photo2.png" alt="item2-img" class="item-img">
+            </div>
+            <div class="item-price-container">
+              <div>
 
+                <h5>Levi Shoes</h5>
+                <span>$74.99</span>
+                <span>$124.99</span>
+              </div>
+              <div class="stepper-container">
+                <button class="decrement">
+                  -
+                </button>
+                <input type="number" min="1" max="10">
+                <button class='increment'>
+                  +
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cost-wrapper">
+          <hr>
+          <div class="cost-container">
+            <p>Shipping</p>
+            <p id="shipping cost">12$</p>
+          </div>
+          <hr>
+          <div class="cost-container">
+            <p>Total</p>
+            <p id="total cost">148.98$</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer>
     <p class="footer-text">Created by <b><u>Manthan Kuber</u></b></p>
