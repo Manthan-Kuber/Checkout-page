@@ -109,7 +109,7 @@ main div > h1 {
 input[type="number"] {
   width: 24px;
   appearance: none;
-  padding-left: 8px;
+  padding-left: 6px;
   -moz-appearance: textfield;
   background-color: var();
   border: none;
