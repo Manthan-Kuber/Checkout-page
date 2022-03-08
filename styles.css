@@ -53,7 +53,6 @@ main div > h1 {
 
 .content-container {
   width: fit-content;
-
   margin-left: auto;
   margin-right: auto;
 }
@@ -63,6 +62,7 @@ main div > h1 {
   border-radius: 12px;
   padding: 3rem 1rem;
   width: var(--container-width);
+  height: fit-content;
 }
 
 .item-img {
@@ -118,6 +118,11 @@ input[type="number"] {
   color: #333333;
   font: 1.6rem var(--ff-Montserrat);
   font-weight: 600;
+  cursor:default;
+}
+
+input[type="number"]:focus{
+  outline: none;
 }
 
 .stepper-container {
@@ -198,10 +203,20 @@ hr {
   border: none;
 }
 
-.form-element select,
-.form-element option {
+.form-element select{
   background-color: #fff;
   color: #828282;
+  
+}
+
+.form-element option{
+  color: var(--primary);
+  background-color: white;
+}
+
+.form-element option:hover{
+  background-color:var(--primary) ;
+  color: white;
 }
 
 .form-element span {
@@ -228,6 +243,7 @@ form h2 {
 
 input[type="checkbox"] {
   width: revert;
+  accent-color: var(--primary);
 }
 
 form > .form-element:nth-last-child(2) {
@@ -258,4 +274,10 @@ label[for="info"]{
   color: #4F4F4F;
 }
 
+@media (min-width:64em) {
+  .item-total-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
 
+  }
+}

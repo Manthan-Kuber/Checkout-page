@@ -30,134 +30,135 @@
   <main>
     <div class="content-container">
       <h1>Checkout</h1>
-      <div class="item-total">
-        <div class="item-wrapper">
-          <div class="item-container">
-            <div class="img-wrapper">
-              <img src="photo1.png" alt="item1-img" class="item-img">
-            </div>
-            <div class="item-price-container">
-              <div>
-                <h5>Vintage Backbag</h5>
-                <span>$54.99</span>
-                <span>$94.99</span>
+      <div class="item-total-wrapper">
+        <div class="item-total">
+          <div class="item-wrapper">
+            <div class="item-container">
+              <div class="img-wrapper">
+                <img src="photo1.png" alt="item1-img" class="item-img">
               </div>
-              <div class="stepper-container">
-                <button class="decrement">
-                  -
-                </button>
-                <input type="number" min="1" max="10" value="1" id="input1">
-                <button class='increment'>
-                  +
-                </button>
+              <div class="item-price-container">
+                <div>
+                  <h5>Vintage Backbag</h5>
+                  <span>$54.99</span>
+                  <span>$94.99</span>
+                </div>
+                <div class="stepper-container">
+                  <button class="decrement">
+                    -
+                  </button>
+                  <input type="number" min="1" max="10" value="1" id="input1" readonly>
+                  <button class='increment'>
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="item-container">
+              <div class="img-wrapper">
+                <img src="photo2.png" alt="item2-img" class="item-img">
+              </div>
+              <div class="item-price-container">
+                <div>
+                  <h5>Levi Shoes</h5>
+                  <span>$74.99</span>
+                  <span>$124.99</span>
+                </div>
+                <div class="stepper-container">
+                  <button class="decrement">
+                    -
+                  </button>
+                  <input type="number" min="1" max="10" value="1" id="input2" readonly>
+                  <button class='increment'>
+                    +
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="item-container">
-            <div class="img-wrapper">
-              <img src="photo2.png" alt="item2-img" class="item-img">
+          <div class="cost-wrapper">
+            <hr>
+            <div class="cost-container">
+              <p>Shipping</p>
+              <p id="shipping cost">12$</p>
             </div>
-            <div class="item-price-container">
-              <div>
-
-                <h5>Levi Shoes</h5>
-                <span>$74.99</span>
-                <span>$124.99</span>
-              </div>
-              <div class="stepper-container">
-                <button class="decrement">
-                  -
-                </button>
-                <input type="number" min="1" max="10" value="1" id="input2">
-                <button class='increment'>
-                  +
-                </button>
-              </div>
+            <hr>
+            <div class="cost-container">
+              <p>Total</p>
+              <p id="total cost"></p>
             </div>
           </div>
         </div>
-        <div class="cost-wrapper">
-          <hr>
-          <div class="cost-container">
-            <p>Shipping</p>
-            <p id="shipping cost">12$</p>
-          </div>
-          <hr>
-          <div class="cost-container">
-            <p>Total</p>
-            <p id="total cost"></p>
-          </div>
+        <div class="contact-info">
+          <h2>Contact Information</h2>
+          <form>
+            <div class="form-element">
+              <label for="email">E-mail</label>
+              <span class="material-icons">
+                mail
+              </span>
+              <input type="email" name="email" placeholder="Enter your email...">
+            </div>
+            <div class="form-element">
+              <label for="phone">Phone</label>
+              <span class="material-icons">
+                call
+              </span>
+              <input type="phone" name="phone" placeholder="Enter your phone...">
+            </div>
+            <h2>Shipping Address</h2>
+            <div class="form-element">
+              <label for="fullname">Name</label>
+              <span class="material-icons">
+                account_circle
+              </span>
+              <input type="text" name="fullname" placeholder="Your name...">
+            </div>
+            <div class="form-element">
+              <label for="address">Address</label>
+              <span class="material-icons">
+                home
+              </span>
+              <input type="text" name="address" placeholder="Your address...">
+            </div>
+            <div class="form-element">
+              <label for="city">City</label>
+              <span class="material-icons">
+                apartment
+              </span>
+              <input type="text" name="city" placeholder="Your city...">
+            </div>
+            <div class="form-element-wrapper">
+              <div class="form-element">
+                <label for="country">Country</label>
+                <span class="material-icons">
+                  public
+                </span>
+                <select name="country">
+                  <option value="">Your country...</option>
+                  <option value="India">India</option>
+                  <option value="Spain">Spain</option>
+                  <option value="Russia">Russia</option>
+                </select>
+              </div>
+              <div class="form-element">
+                <label for="postalCode">Postal Code</label>
+                <span class="material-icons">
+                  markunread_mailbox
+                </span>
+                <input type="text" name="postalCode" placeholder="Your Postal Code...">
+              </div>
+            </div>
+            <div class="form-element">
+              <input type="checkbox" name="info" id="info">
+              <label for="info">Save this information for next time</label>
+            </div>
+            <div class="form-element">
+              <div></div>
+              <input type="submit" value="Continue">
+            </div>
+          </form>
         </div>
-      </div>
-      <div class="contact-info">
-        <h2>Contact Information</h2>
-        <form>
-          <div class="form-element">
-            <label for="email">E-mail</label>
-            <span class="material-icons">
-              mail
-            </span>
-            <input type="email" name="email" placeholder="Enter your email...">
-          </div>
-          <div class="form-element">
-            <label for="phone">Phone</label>
-            <span class="material-icons">
-              call
-            </span>
-            <input type="phone" name="phone" placeholder="Enter your phone...">
-          </div>
-          <h2>Shipping Address</h2>
-          <div class="form-element">
-            <label for="fullname">Name</label>
-            <span class="material-icons">
-              account_circle
-            </span>
-            <input type="text" name="fullname" placeholder="Your name...">
-          </div>
-          <div class="form-element">
-            <label for="address">Address</label>
-            <span class="material-icons">
-              home
-            </span>
-            <input type="text" name="address" placeholder="Your address...">
-          </div>
-          <div class="form-element">
-            <label for="city">City</label>
-            <span class="material-icons">
-              apartment
-            </span>
-            <input type="text" name="city" placeholder="Your city...">
-          </div>
-          <div class="form-element-wrapper">
-            <div class="form-element">
-              <label for="country">Country</label>
-              <span class="material-icons">
-                public
-              </span>
-              <select name="country">
-                <option value="">Your country...</option>
-                <option value="India">India</option>
-                <option value="Spain">Spain</option>
-                <option value="Russia">Russia</option>
-              </select>
-            </div>
-            <div class="form-element">
-              <label for="postalCode">Postal Code</label>
-              <span class="material-icons">
-                markunread_mailbox
-              </span>
-              <input type="text" name="postalCode" placeholder="Your Postal Code...">
-            </div>
-          </div>
-          <div class="form-element">
-            <input type="checkbox" name="info" id="info">
-            <label for="info">Save this information for next time</label>
-          </div>
-          <div class="form-element">
-            <div></div>
-            <input type="submit" value="Continue">
-          </div>
-        </form>
       </div>
     </div>
   </main>
