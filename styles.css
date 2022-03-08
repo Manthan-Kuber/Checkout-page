@@ -60,7 +60,7 @@ main div > h1 {
 .item-total {
   background-color: var(--box-gray);
   border-radius: 12px;
-  padding: 3rem 1rem;
+  padding: 3rem 1rem 1rem;
   width: var(--container-width);
   height: fit-content;
 }
@@ -276,8 +276,11 @@ label[for="info"]{
 
 @media (min-width:64em) {
   .item-total-wrapper{
-    display: grid;
-    grid-template-columns: repeat(2,auto);
-
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .contact-info{
+    margin-top:revert;
   }
 }
