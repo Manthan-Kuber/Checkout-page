@@ -6,8 +6,7 @@ window.onload = function () {
   let count1 = document.getElementById("input1").value;
   let count2 = document.getElementById("input2").value;
 
-  totalCost.innerText =
-      "$" + (54.99 * count1 + 74.99 * count2 + 12).toFixed(2);
+  totalCost.innerText = "$" + (54.99 * count1 + 74.99 * count2 + 12).toFixed(2);
 
   increment[0].addEventListener("click", () => {
     console.log("Inc button clicked");

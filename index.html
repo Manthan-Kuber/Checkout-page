@@ -18,6 +18,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://your-site-or-cdn.com/fontawesome/v6.0.0/js/all.js" data-auto-replace-svg="nest"></script>
+
 
 
   <script src="index.js"></script>
@@ -86,6 +88,76 @@
             <p id="total cost"></p>
           </div>
         </div>
+      </div>
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <form>
+          <div class="form-element">
+            <label for="email">E-mail</label>
+            <span class="material-icons">
+              mail
+            </span>
+            <input type="email" name="email" placeholder="Enter your email...">
+          </div>
+          <div class="form-element">
+            <label for="phone">Phone</label>
+            <span class="material-icons">
+              call
+            </span>
+            <input type="phone" name="phone" placeholder="Enter your phone...">
+          </div>
+          <h2>Shipping Address</h2>
+          <div class="form-element">
+            <label for="fullname">Name</label>
+            <span class="material-icons">
+              account_circle
+            </span>
+            <input type="text" name="fullname" placeholder="Your name...">
+          </div>
+          <div class="form-element">
+            <label for="address">Address</label>
+            <span class="material-icons">
+              home
+            </span>
+            <input type="text" name="address" placeholder="Your address...">
+          </div>
+          <div class="form-element">
+            <label for="city">City</label>
+            <span class="material-icons">
+              apartment
+            </span>
+            <input type="text" name="city" placeholder="Your city...">
+          </div>
+          <div class="form-element-wrapper">
+            <div class="form-element">
+              <label for="country">Country</label>
+              <span class="material-icons">
+                public
+              </span>
+              <select name="country">
+                <option value="">Your country...</option>
+                <option value="India">India</option>
+                <option value="Spain">Spain</option>
+                <option value="Russia">Russia</option>
+              </select>
+            </div>
+            <div class="form-element">
+              <label for="postalCode">Postal Code</label>
+              <span class="material-icons">
+                markunread_mailbox
+              </span>
+              <input type="text" name="postalCode" placeholder="Your Postal Code...">
+            </div>
+          </div>
+          <div class="form-element">
+            <input type="checkbox" name="info" id="info">
+            <label for="info">Save this information for next time</label>
+          </div>
+          <div class="form-element">
+            <div></div>
+            <input type="submit" value="Continue">
+          </div>
+        </form>
       </div>
     </div>
   </main>
