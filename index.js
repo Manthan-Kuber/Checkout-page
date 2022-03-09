@@ -2,6 +2,7 @@ window.onload = function () {
   const increment = document.getElementsByClassName("increment");
   const decrement = document.getElementsByClassName("decrement");
   const totalCost = document.getElementById("total cost");
+  const form = document.getElementById("form");
 
   let count1 = document.getElementById("input1").value;
   let count2 = document.getElementById("input2").value;
@@ -43,4 +44,9 @@ window.onload = function () {
     totalCost.innerText =
       "$" + (54.99 * count1 + 74.99 * count2 + 12).toFixed(2);
   });
+
+  form.addEventListener("submit", () => {
+    window.alert("Form Submitted Successfully");
+  });  
 };
+

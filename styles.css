@@ -118,10 +118,10 @@ input[type="number"] {
   color: #333333;
   font: 1.6rem var(--ff-Montserrat);
   font-weight: 600;
-  cursor:default;
+  cursor: default;
 }
 
-input[type="number"]:focus{
+input[type="number"]:focus {
   outline: none;
 }
 
@@ -203,19 +203,18 @@ hr {
   border: none;
 }
 
-.form-element select{
+.form-element select {
   background-color: #fff;
   color: #828282;
-  
 }
 
-.form-element option{
+.form-element option {
   color: var(--primary);
   background-color: white;
 }
 
-.form-element option:hover{
-  background-color:var(--primary) ;
+.form-element option:hover {
+  background-color: var(--primary);
   color: white;
 }
 
@@ -250,14 +249,14 @@ form > .form-element:nth-last-child(2) {
   padding-left: 0.5rem;
   display: grid;
   grid-template-columns: 2rem auto;
-  gap:1rem;
+  gap: 1rem;
   align-items: center;
   font-size: clamp(1rem, 2vw + 0.5rem, 1.2rem);
 }
 
-form > .form-element:last-child{
+form > .form-element:last-child {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   width: var(--container-width);
 }
@@ -266,21 +265,21 @@ form > .form-element:last-child input {
   background-color: var(--primary);
   cursor: pointer;
   padding: revert;
-  color:white;
+  color: white;
   border: none;
 }
 
-label[for="info"]{
-  color: #4F4F4F;
+label[for="info"] {
+  color: #4f4f4f;
 }
 
-@media (min-width:64em) {
-  .item-total-wrapper{
+@media (min-width: 64em) {
+  .item-total-wrapper {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
   }
-  .contact-info{
-    margin-top:revert;
+  .contact-info {
+    margin-top: revert;
   }
 }

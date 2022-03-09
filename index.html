@@ -91,20 +91,20 @@
         </div>
         <div class="contact-info">
           <h2>Contact Information</h2>
-          <form>
+          <form action="/" id="form">
             <div class="form-element">
               <label for="email">E-mail</label>
               <span class="material-icons">
                 mail
               </span>
-              <input type="email" name="email" placeholder="Enter your email...">
+              <input type="email" name="email" placeholder="Enter your email..." required>
             </div>
             <div class="form-element">
               <label for="phone">Phone</label>
               <span class="material-icons">
                 call
               </span>
-              <input type="phone" name="phone" placeholder="Enter your phone...">
+              <input type="tel" name="phone" placeholder="Enter your phone..." required>
             </div>
             <h2>Shipping Address</h2>
             <div class="form-element">
@@ -112,21 +112,21 @@
               <span class="material-icons">
                 account_circle
               </span>
-              <input type="text" name="fullname" placeholder="Your name...">
+              <input type="text" name="fullname" placeholder="Your name..." required>
             </div>
             <div class="form-element">
               <label for="address">Address</label>
               <span class="material-icons">
                 home
               </span>
-              <input type="text" name="address" placeholder="Your address...">
+              <input type="text" name="address" placeholder="Your address..." required>
             </div>
             <div class="form-element">
               <label for="city">City</label>
               <span class="material-icons">
                 apartment
               </span>
-              <input type="text" name="city" placeholder="Your city...">
+              <input type="text" name="city" placeholder="Your city..." required>
             </div>
             <div class="form-element-wrapper">
               <div class="form-element">
@@ -134,7 +134,7 @@
                 <span class="material-icons">
                   public
                 </span>
-                <select name="country">
+                <select name="country" required>
                   <option value="">Your country...</option>
                   <option value="India">India</option>
                   <option value="Spain">Spain</option>
